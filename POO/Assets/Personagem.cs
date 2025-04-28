@@ -47,14 +47,29 @@ public class Personagem : MonoBehaviour
     {
         this.velocidade = forca_velocidade;
     }
+
     public void Velocidade(int velocidade)
     {
         this.velocidade = velocidade;
     }
-    
-    
-    
-    
+
+    private void Atribuirnumero_de_pes(int numero_de_pes)
+    {
+        this.numero_de_pes = numero_de_pes;
+    }
+    public int Numero_de_pes(int numero_de_pes)
+    {
+        return this.numero_de_pes;
+    }
+
+    private void Atribuirnumero_de_maos(int numero_de_maos)
+    {
+        this.numero_de_maos = numero_de_maos;
+    }
+    public int Numero_de_maos(int numero_de_maos)
+    {
+        return this.numero_de_maos;
+    }
     
     
     
