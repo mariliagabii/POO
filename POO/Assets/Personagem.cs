@@ -2,12 +2,19 @@ using UnityEngine;
 
 public class Personagem : MonoBehaviour
 {
+    [ SerializeField ]
     private string nome;
-    private string energia;
+    [ SerializeField ]
+    private int energia;
+    [ SerializeField ]
     private int forca_ataque;
+    [ SerializeField ]
     private int forca_do_pulo;
+    [ SerializeField ]
     private int velocidade;
+    [ SerializeField ]
     private int numero_de_pes;
+    [ SerializeField ]
     private int numero_de_maos;
 
     public void AtribuirNome(string nome)
@@ -18,11 +25,11 @@ public class Personagem : MonoBehaviour
     {
         return this.nome;
     }
-    private void Atribuirenergia(string energia)
+    public void Atribuirenergia(int energia)
     {
         this.energia = energia;
     }
-    public string Energia()
+    public int Energia()
     {
         return this.energia;
     }
@@ -43,14 +50,15 @@ public class Personagem : MonoBehaviour
     {
         return this.forca_do_pulo;
     }
-    private void Atribuirforca_velocidade(int forca_velocidade)
-    {
-        this.velocidade = forca_velocidade;
-    }
-
-    public void Velocidade(int velocidade)
+    
+    public void AtribuirVelocidade(int velocidade)
     {
         this.velocidade = velocidade;
+    }
+
+    public int Velocidade()
+    {
+        return this.velocidade;
     }
 
     private void Atribuirnumero_de_pes(int numero_de_pes)
