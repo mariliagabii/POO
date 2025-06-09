@@ -2,7 +2,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class MovimentoInimigo : MonoBehaviour
+public class AnimaçaoInimigo : MonoBehaviour
 {
     public GameObject ataqueObject;
     private GameObject _player;
